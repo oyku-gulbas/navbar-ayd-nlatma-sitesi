@@ -1,0 +1,100 @@
+.navbar{
+    background-color:#393E46;
+    height: 80px;
+    margin: 20px;
+    border-radius: 16px;
+    padding: 0.5rem;
+}
+.navbar-brand{
+    font-weight: 500;
+    color: #ff6608;
+    font-size: 24px;
+    transition: 0.3s color;
+ 
+  
+}
+.offcanvas{
+    background-color: #393E46;
+    color:#ff6608;
+    opacity: .9;
+}
+
+.login-button{
+    background-color:#ff6608;
+    color:black;
+    font-size: 14px;
+    padding: 8px 20px ;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+    
+}
+
+.login-button:hover{
+opacity: .6;
+}
+.navbar-toggler{
+    border: none;
+    font-size: 1.25rem;
+}   
+.navbar-toggler:focus, .btn_close:focus{
+    box-shadow: none;
+    outline: none;
+}
+.nav-link{
+    color:black;
+    font-weight: 500;
+    position: relative;
+
+}
+
+.nav-link:hover{
+    color:#ff6608;
+
+}
+@media (min-width:991px){
+.nav-link::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 2px;
+    background-color: #ff6608;
+    visibility: hidden;
+    transition: 0.2s ease-in-out;
+    
+}
+.nav-link:hover::before , .nav-link .active::before {
+    width: 100%;
+    visibility: visible;
+
+}
+}
+.hero-section{
+    background: url(navbar-img.jpeg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+
+}
+.hero-section::before{
+    background-color: rgba( 0, 0, 0, 0.6 );
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.hero-section .container{
+    height: 100vh;
+    z-index: 1;
+    position: relative;
+}
+.hero-section h1 {
+    font-size: 1.5em;
+}
+.hero-section h2 {
+    font-size: 1.2em;
+}
